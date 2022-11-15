@@ -107,11 +107,11 @@ Results are stored in [output/](output/)
 1. Summary
     - The output computed under pr32 sourcecode was NOT the same as the one of v1.3.1.
     - The cause of this difference is assumed by comparing the outputs and the assumed casue is that numbers of rounding digits for floating point numbers are not the same.
-    - Quick servey towards scripts that might affect the rouding digits (e.g. cal_tc.py, compute.py, lib_acf.f90, sum_acf.py and etc..) couldn't find out the change of its number.
-    - Thus, the cause was assumed that the version differencies of the dependent packages of CURP beween v1.3.1 and ver. develop branch.
+    - Scripts that might affect the rouding digits are like ```cal_tc.py, compute.py, lib_acf.f90, sum_acf.py```.
+    - I used the same version of numpy, which is v1.16.6 at this time (previous calc was not), thus the cause of it is not arisen due to numpy scripts.
 
-    The table below is the full result of this QA calculaton towards 00_0. 
-    Left: residue-residue thermal conductibity obtained under ver. pr32 | Right: obtained under v1.3.1.    
+    The table below is the full result of this QA calculaton towards 00_0.   
+    <b>Left: residue-residue thermal conductibity obtained under ver. pr32 | Right: obtained under v1.3.1.</b>    
     You can see the number of rouding digits was probably increased from v1.3.1 to pr32.  
 
     ```bash
